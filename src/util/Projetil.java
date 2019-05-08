@@ -5,7 +5,7 @@ public class Projetil {
     public void PercursoProjetil(Double xn, Double vn, int tFinal) {
         Double h = 0.01;
         Double k1, k2, k3, k4, l1, l2, l3, l4;
-        for (Double tn = 0.0; tn < tFinal; tn = tn + h) {
+        for (Double tn = 0.0; xn >= 0; tn = tn + h) {
             k1 = fx(tn, xn, vn);
             l1 = gx(tn, xn, vn);
 
